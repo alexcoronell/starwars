@@ -1,0 +1,16 @@
+<main class="container">
+  <h1 class="title">Planets</h1>
+  <div class="content">
+    <mat-card *ngFor="let item of planets">
+      <mat-card-header>
+        <mat-card-title>{{ item.name }}</mat-card-title>
+        <mat-card-subtitle>Population: {{ item.population }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Terrain: {{ item.terrain}}</p>
+        <p>Climate: {{item.climate}}</p>
+        <p>Rotation Period: {{item.rotation_period}}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</main>

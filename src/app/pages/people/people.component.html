@@ -1,0 +1,15 @@
+<main class="container">
+  <h1 class="title">People</h1>
+  <div class="content">
+    <mat-card *ngFor="let item of people">
+      <mat-card-header>
+        <mat-card-title>{{ item.name }}</mat-card-title>
+        <mat-card-subtitle>Gender: {{ item.gender }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Birthyear: {{ item.birth_year}}</p>
+        <p>Height: {{item.height}}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</main>
