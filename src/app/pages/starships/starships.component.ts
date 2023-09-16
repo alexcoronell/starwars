@@ -21,7 +21,6 @@ export class StarshipsComponent {
       next: (res) => {
         const { results } = res as any;
         this.starships = results as Starship[];
-        console.log(this.starships);
       },
       error: (e) => console.error(),
     });

@@ -21,7 +21,6 @@ export class PeopleComponent implements OnInit {
       next: (res) => {
         const { results } = res as any;
         this.people = results as People[];
-        console.log(this.people);
       },
       error: (e) => console.error(),
     });

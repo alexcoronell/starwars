@@ -21,7 +21,6 @@ export class PlanetsComponent implements OnInit {
       next: (res) => {
         const { results } = res as any;
         this.planets = results as Planet[];
-        console.log(this.planets);
       },
       error: (e) => console.error(),
     });
