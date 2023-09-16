@@ -14,3 +14,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
+button {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
